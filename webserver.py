@@ -29,18 +29,10 @@ class webserverHandler(BaseHTTPRequestHandler):
                         server.serve_forever()
 
 
-
-
-
                     except KeyboardInterrupt:
                         print ("^C entered, stopping web server...")
                         server.socket.close()
 
 
-
-
-
-
-
-if __name__ == 'main':
-    main()
+                if __name__ == 'main':
+                    main()
