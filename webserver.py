@@ -32,9 +32,9 @@ class webserverHandler(BaseHTTPRequestHandler):
 
 
 
-    except KeyboardInterrupt:
-        print ("^C entered, stopping web server...")
-        server.socket.close()
+                    except KeyboardInterrupt:
+                        print ("^C entered, stopping web server...")
+                        server.socket.close()
 
 
 
