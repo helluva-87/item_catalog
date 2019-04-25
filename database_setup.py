@@ -21,7 +21,7 @@ class Item(Base):
     id = Column(Integer, primary_key=True)
     item_name = Column(String(250))
     # street_number = Column(String(250))
-    # post_code = Column(String(250), nullable=False)
+    item_description = Column(String(250), nullable=False)
     item_id = Column(Integer, ForeignKey('catalog.id'))
     catalog = relationship(Catalog)
 
